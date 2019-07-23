@@ -12,9 +12,67 @@
 
 		<script src="{% static '/vendors/jquery/jquery-3.3.1.min.js' %}"></script>
 		<script src="{% static '/vendors/jquery-ui/jquery-ui.min.js' %}"></script>
+		
+		<style>
+			
+			
+			body{
+       height: 100%;
+       padding:0px;
+       background-color : purple;
+    	}
+			
+			
+      .box {
+        background-color: orange;
+        color: orange;
+        border-style: solid;
+        width: 18%;
+        height: 35%;
+        margin-left: 10px;
+        margin-right: 10px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+      }
+			
+      .box1 {
+        background-color: purple;
+        color: purple;
+        border-style: solid;
+        width: 18%;
+        height: 35%;
+        margin-left: 10px;
+        margin-right: 10px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+      }
+			
+      .flex-container {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        height: 500px;
+				align-items: flex-start;
+      }
+
+    </style>
 	</head>
 	<body>
 		<!-- Your layout here -->
+		<div class = "flex-container">
+        <div class = "stretched box">1</div>
+        <div class = "stretched box">2</div>
+        <div class = "stretched box">3</div>
+        <div class = "stretched box">4</div>
+        <div class = "stretched box">5</div>
+        <div class = "stretched box1">6</div>
+        <div class = "stretched box1">7</div>
+        <div class = "stretched box">8</div>
+        <div class = "stretched box1">9</div>
+        <div class = "stretched box1">10</div>
+      </div>
+    <div class = "flex-container">
+    </div>
 
 	</body>
 </html>
